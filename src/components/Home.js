@@ -20,19 +20,30 @@ export default function Home() {
 
 
 const WrapperRight = styled.div`
-
+width: 600px;
+@media screen and (max-width: 768px){
+  display: none;
+}
 `;
 const Wrapper = styled.div`
+width: 600px;
 
+@media screen and (max-width: 768px) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 `;
 const Container = styled.div`
 margin-top: 40px;
 display: flex;
-flex-wrap: wrap;
 
 @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2px;
 }
 `;

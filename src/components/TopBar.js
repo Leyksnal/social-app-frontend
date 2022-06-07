@@ -14,7 +14,11 @@ export default function TopBar() {
 
 const Name = styled.div`
 margin-top: 10px;
-font-size: 1.2rem;
+font-size: 1rem;
+
+@media screen and (max-width: 768px) {
+  font-size: 0.7rem;
+}
 `;
 const Img = styled.img`
 width: 70px;
@@ -24,6 +28,11 @@ outline: 3px solid #F80F7E;
 border: 2.5px solid transparent;
 background-clip: content-box;
 object-fit: cover;
+
+@media screen and (max-width: 768px) {
+  width: 40px;
+  height: 40px;
+}
 `;
 const Wrapper = styled.div`
 display: flex;
@@ -36,11 +45,13 @@ const Container = styled.div`
 background-color: #fff;
 border: 1px solid #DBDBDB;
 padding: 10px 0;
-width: 600px;
+width: 100%;
 display: flex;
 border-radius: 10px;
 
 @media screen and (max-width: 768px) {
-    width: 400px;
+    width: 425px;
+    border-radius: 0;
+    border: 0;
 }
 `;

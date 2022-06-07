@@ -5,11 +5,13 @@ import {TbMessage2} from 'react-icons/tb'
 import {BiMessageSquareAdd, BiSearchAlt} from 'react-icons/bi'
 import {GiTargetShot} from 'react-icons/gi'
 import {AiOutlineHeart} from 'react-icons/ai'
+import {FiCamera} from 'react-icons/fi'
 
 export default function Header() {
   return (
     <Container>
         <Wrapper>
+            <Cam />
             <Logo>Picasa Meet</Logo>
             <Bar>
                 <Icon />
@@ -22,86 +24,126 @@ export default function Header() {
                 <Icon4 />
                 <Icon5 />
                 <Owner>
-                    <Img />
+                    <Img src="/ak.jpg"/>
                 </Owner>
             </IconHolder>
+            <IconM />
         </Wrapper>
     </Container>
   )
 }
 
-// const Container = styled.div``;
+const Cam = styled(FiCamera)`
+display: none;
+
+@media screen and (max-width: 768px) {
+    display: block;
+    font-size: 1.5rem;
+}
+`;
 const Owner = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 margin-left: 15px;
 `;
-const Img = styled.div`
-width: 50px;
-height: 50px;
+const Img = styled.img`
+width: 25px;
+height: 25px;
 border-radius: 50%;
-background-color: #004080;
+object-fit: cover;
 `;
 const Icon5 = styled(AiOutlineHeart)`
-font-size: 2.2rem;
-margin: 0 15px;
+font-size: 1.5rem;
+margin: 0 10px;
 `;
 const Icon4 = styled(GiTargetShot)`
-font-size: 2.2rem;
-margin: 0 15px;
+font-size: 1.5rem;
+margin: 0 10px;
 `;
 const Icon3 = styled(BiMessageSquareAdd)`
-font-size: 2.2rem;
-margin: 0 15px;
+font-size: 1.5rem;
+margin: 0 10px;
+`;
+const IconM = styled(TbMessage2)`
+display: none;
+
+@media screen and (max-width: 768px){
+    display: block;
+    font-size: 1.8rem;
+}
 `;
 const Icon2 = styled(TbMessage2)`
-font-size: 2.2rem;
-margin: 0 15px;
+font-size: 1.5rem;
+margin: 0 10px;
 `;
 const Icon1 = styled(HiHome)`
-font-size: 2.2rem;
-margin: 0 15px;
+font-size: 1.5rem;
+margin: 0 10px;
 `;
 const IconHolder = styled.div`
 display: flex;
 align-items: center;
 
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 const Input = styled.input`
 outline: none;
 border: 0;
 background-color: transparent;
-font-size: 1.2rem;
+font-size: 0.9rem;
 margin-left: 10px;
 `;
 const Icon = styled(BiSearchAlt)`
-font-size: 1.8rem;
+font-size: 1.2rem;
 color: gray;
 `;
 const Bar = styled.div`
 display: flex;
 align-items: center;
 background-color: #EFEFEF;
-height: 50px;
-width: 400px;
+height: 40px;
+width: 300px;
 padding: 0 10px;
 border-radius: 10px;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 const Logo = styled.div`
-font-size: 1.9rem;
+font-size: 1.3rem;
 font-style: italic;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+}
 `;
 const Wrapper = styled.div`
-width: 75%;
+width: 70%;
 display: flex;
 align-items: center;
 justify-content: space-between;
+
+@media screen and (max-width: 768px) {
+    width: 90%;
+}
 `;
 const Container = styled.div`
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 60px;
+height: 55px;
+position: fixed;
+z-index: 1;
+width: 100%;
+background-color: #fff;
+
+@media screen and (max-width: 768px) {
+    height: 45px;
+    width: 100%;
+}
 `;

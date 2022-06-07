@@ -1,36 +1,47 @@
 import React from 'react'
 import styled from 'styled-components'
+import {BsThreeDots, BsBookmark} from 'react-icons/bs'
+import {TbSend} from 'react-icons/tb'
+import {FaRegComment} from 'react-icons/fa'
+import {AiOutlineHeart} from 'react-icons/ai'
+import {FiSmile} from 'react-icons/fi'
 
 export default function Card() {
   return (
     <Container>
         <Wrapper>
             <Topper>
-                <Img />
-                <Name>Leke</Name>
+                <Inner>
+                    <Img src='/ak.jpg' />
+                    <Name>
+                        <I>Leke</I>
+                        <In>Original Audio</In>
+                    </Name>
+                </Inner>
                 <Icon />
             </Topper>
-            <Img2 />
+            <Img2 src="/ak.jpg"/>
             <Reaction>
                 <Holder>
                     <Icon2 />
                     <Icon3 />
                     <Icon4 />
                 </Holder>
-                <Holder2>
-                    <Icon5 />
-                </Holder2>
+                <Icon5 />
             </Reaction>
             <Views>89,465 Views</Views>
             <See>
-                <Name>Leke</Name>
-                <Span>The name is giving it back to the community</Span>
+                <I>Leke</I>
+                <Span>The name is giving it back to the community...</Span>
             </See>
             <Com>View all commnets</Com>
             <Tym>3 hours ago</Tym>
             <Add>
-                <Icon6 />
-                <Input placeholder='Add a comment'/>
+                <Cal>
+                    <Icon6 />
+                    <Input placeholder='Add a comment'/>
+                </Cal>
+                <Btn>Post</Btn>
             </Add>
         </Wrapper>
     </Container>
@@ -38,30 +49,214 @@ export default function Card() {
 }
 
 
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-const Reaction = styled.div``;
-const Input = styled.input``;
-const Add = styled.div``;
-const Tym = styled.div``;
-const Com = styled.div``;
-const Span = styled.div``;
-const Name = styled.div``;
-const See = styled.div``;
-const Views = styled.div``;
-const Holder2 = styled.div``;
-const Holder = styled.div``;
-const Img2 = styled.div``;
-const Img = styled.div``;
-const Icon = styled.div``;
-const Icon6 = styled.div``;
-const Icon2 = styled.div``;
-const Icon3 = styled.div``;
-const Icon4 = styled.div``;
-const Icon5 = styled.div``;
-const Topper = styled.div``;
-const Wrapper = styled.div``;
-const Container = styled.div``;
+const Cal = styled.div`
+margin: 0 10px;
+display: flex;
+align-items: center;
+flex: 1;
+`;
+const Btn = styled.div`
+margin-right: 10px;
+color: #33A9F7;
+font-weight: 500;
+font-size: 1.2rem;
+transition: all 200ms;
+
+:hover{
+    cursor: pointer;
+    color: #B9E2FD;
+}
+
+@media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+}
+`;
+const In = styled.div`
+@media screen and (max-width: 768px) {
+    font-size: 0.6rem;
+}
+`;
+const I = styled.div`
+font-weight: 600;
+font-size: 1.2rem;
+color: #404040;
+
+@media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+}
+`;
+const Inner = styled.div`
+display: flex;
+align-items: center;
+`;
+const Reaction = styled.div`
+display: flex;
+justify-content: space-between;
+margin: 0 10px;
+`;
+const Input = styled.input`
+margin-left: 10px;
+width: 100%;
+height: 30px;
+font-size: 1rem;
+font-family: "poppins";
+outline: none;
+border: 0;
+
+@media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+}
+`;
+const Add = styled.div`
+width: 100%;
+border-top: 1px solid #DBDBDB;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 0;
+
+@media screen and (max-width: 768px) {
+    padding: 5px 0;
+}
+`;
+const Tym = styled.div`
+margin: 10px 10px;
+text-transform: uppercase;
+font-size: 0.9rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+}
+`;
+const Com = styled.div`
+margin: 10px 10px;
+
+@media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+}
+`;
+const Span = styled.div`
+margin-left: 10px;
+
+@media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+}
+`;
+const Name = styled.div`
+margin-left: 10px;
+
+@media screen and (max-width: 768px) {
+    margin-left: 20px;
+}
+`;
+const See = styled.div`
+margin: 0 10px;
+display: flex;
+align-items: center;
+
+`;
+const Views = styled.div`
+margin: 10px 10px;
+
+`;
+const Holder = styled.div`
+display: flex;
+width: 150px;
+justify-content: space-between;
+align-items: center;
+
+@media screen and (max-width: 768px) {
+    width: 90px;
+}
+`;
+const Img2 = styled.img`
+width: 100%;
+height: 550px;
+object-fit: contain;
+background-color: black;
+
+@media screen and (max-width: 768px) {
+    height: 500px;
+}
+`;
+const Img = styled.img`
+width: 40px;
+height: 40px;
+border-radius: 50%;
+outline: 3px solid #F80F7E;
+border: 2.5px solid transparent;
+background-clip: content-box;
+object-fit: cover;
+
+@media screen and (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+}
+`;
+const Icon = styled(BsThreeDots)`
+font-size: 1.5rem;
+color: #262626;
+`;
+const Icon6 = styled(FiSmile)`
+font-size: 2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+}
+`;
+const Icon2 = styled(AiOutlineHeart)`
+font-size: 2.2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+}
+`;
+const Icon3 = styled(FaRegComment)`
+font-size: 2.2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+}
+`;
+const Icon4 = styled(TbSend)`
+font-size: 2.2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+}
+`;
+const Icon5 = styled(BsBookmark)`
+font-size: 2.2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+}
+`;
+const Topper = styled.div`
+margin: 10px 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+`;
+const Wrapper = styled.div`
+@media screen and (max-width: 768px) {
+    width: 100%;
+}
+`;
+const Container = styled.div`
+background-color: #fff;
+border: 1px solid #DBDBDB;
+width: 100%;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+margin: 30px 0;
+
+@media screen and (max-width: 768px) {
+    margin-top: 0;
+    width: 425px;
+    border-radius: 0;
+}
+`;
