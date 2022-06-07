@@ -72,13 +72,15 @@ transition: all 200ms;
 }
 `;
 const In = styled.div`
+font-size: 0.6rem;
+
 @media screen and (max-width: 768px) {
     font-size: 0.6rem;
 }
 `;
 const I = styled.div`
 font-weight: 600;
-font-size: 1.2rem;
+font-size: 0.9rem;
 color: #404040;
 
 @media screen and (max-width: 768px) {
@@ -180,11 +182,11 @@ background-color: black;
 }
 `;
 const Img = styled.img`
-width: 40px;
-height: 40px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
-outline: 3px solid #F80F7E;
-border: 2.5px solid transparent;
+outline: 2px solid #F80F7E;
+border: 1px solid transparent;
 background-clip: content-box;
 object-fit: cover;
 

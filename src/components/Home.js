@@ -20,13 +20,13 @@ export default function Home() {
 
 
 const WrapperRight = styled.div`
-width: 600px;
+width: 450px;
 @media screen and (max-width: 768px){
   display: none;
 }
 `;
 const Wrapper = styled.div`
-width: 600px;
+width: 450px;
 
 @media screen and (max-width: 768px) {
   width: 100%;

@@ -14,17 +14,17 @@ export default function TopBar() {
 
 const Name = styled.div`
 margin-top: 10px;
-font-size: 1rem;
+font-size: 0.8rem;
 
 @media screen and (max-width: 768px) {
   font-size: 0.7rem;
 }
 `;
 const Img = styled.img`
-width: 70px;
-height: 70px;
+width: 50px;
+height: 50px;
 border-radius: 50%;
-outline: 3px solid #F80F7E;
+outline: 2px solid #F80F7E;
 border: 2.5px solid transparent;
 background-clip: content-box;
 object-fit: cover;

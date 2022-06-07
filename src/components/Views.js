@@ -13,7 +13,7 @@ export default function Views() {
 }
 
 const Wrapper = styled.div`
-width: 1200px;
+width: 900px;
 `;
 const Container = styled.div`
 display: flex;
