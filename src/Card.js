@@ -59,7 +59,7 @@ const Btn = styled.div`
 margin-right: 10px;
 color: #33A9F7;
 font-weight: 500;
-font-size: 1.2rem;
+font-size: 1rem;
 transition: all 200ms;
 
 :hover{
@@ -100,7 +100,7 @@ const Input = styled.input`
 margin-left: 10px;
 width: 100%;
 height: 30px;
-font-size: 1rem;
+font-size: 0.9rem;
 font-family: "poppins";
 outline: none;
 border: 0;
@@ -115,7 +115,7 @@ border-top: 1px solid #DBDBDB;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 15px 0;
+padding: 10px 0;
 
 @media screen and (max-width: 768px) {
     padding: 5px 0;
@@ -124,7 +124,7 @@ padding: 15px 0;
 const Tym = styled.div`
 margin: 10px 10px;
 text-transform: uppercase;
-font-size: 0.9rem;
+font-size: 0.6rem;
 
 @media screen and (max-width: 768px) {
     font-size: 0.7rem;
@@ -132,13 +132,15 @@ font-size: 0.9rem;
 `;
 const Com = styled.div`
 margin: 10px 10px;
+font-size: 0.8rem;
 
 @media screen and (max-width: 768px) {
     font-size: 0.9rem;
 }
 `;
 const Span = styled.div`
-margin-left: 10px;
+margin-left: 8px;
+font-size: 0.8rem;
 
 @media screen and (max-width: 768px) {
     font-size: 0.9rem;
@@ -159,11 +161,11 @@ align-items: center;
 `;
 const Views = styled.div`
 margin: 10px 10px;
-
+font-size: 0.9rem;
 `;
 const Holder = styled.div`
 display: flex;
-width: 150px;
+width: 100px;
 justify-content: space-between;
 align-items: center;
 
@@ -198,39 +200,39 @@ object-fit: cover;
 }
 `;
 const Icon = styled(BsThreeDots)`
-font-size: 1.5rem;
+font-size: 1rem;
 color: #262626;
 `;
 const Icon6 = styled(FiSmile)`
-font-size: 2rem;
+font-size: 1.5rem;
 
 @media screen and (max-width: 768px) {
     font-size: 1.2rem;
 }
 `;
 const Icon2 = styled(AiOutlineHeart)`
-font-size: 2.2rem;
+font-size: 1.5rem;
 
 @media screen and (max-width: 768px) {
     font-size: 1.2rem;
 }
 `;
 const Icon3 = styled(FaRegComment)`
-font-size: 2.2rem;
+font-size: 1.5rem;
 
 @media screen and (max-width: 768px) {
     font-size: 1.2rem;
 }
 `;
 const Icon4 = styled(TbSend)`
-font-size: 2.2rem;
+font-size: 1.5rem;
 
 @media screen and (max-width: 768px) {
     font-size: 1.2rem;
 }
 `;
 const Icon5 = styled(BsBookmark)`
-font-size: 2.2rem;
+font-size: 1.5rem;
 
 @media screen and (max-width: 768px) {
     font-size: 1.2rem;
@@ -254,7 +256,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 border-radius: 10px;
-margin: 30px 0;
+margin: 20px 0;
 
 @media screen and (max-width: 768px) {
     margin-top: 0;

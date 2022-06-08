@@ -13,7 +13,17 @@ export default function Views() {
 }
 
 const Wrapper = styled.div`
-width: 900px;
+width: 850px;
+
+@media screen and (max-width: 768px) {
+  width: 768px;
+}
+@media screen and (max-width: 425px) {
+  width: 425px;
+}
+@media screen and (max-width: 375px) {
+  width: 375px;
+}
 `;
 const Container = styled.div`
 display: flex;

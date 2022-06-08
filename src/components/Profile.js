@@ -30,7 +30,7 @@ export default function Profile() {
 const Btn = styled.div`
 color: #33A9F7;
 font-weight: 500;
-font-size: 1.2rem;
+font-size: 0.8rem;
 transition: all 200ms;
 
 :hover{
@@ -41,14 +41,16 @@ transition: all 200ms;
 
 const In = styled.div`
 color: #BDBDBD;
+font-size: 0.8rem;
+margin-top: 5px;
 `;
 const I = styled.div`
 font-weight: 600;
-font-size: 1.2rem;
+font-size: 0.9rem;
 color: #404040;
 `;
 const Name = styled.div`
-margin-left: 10px;
+margin-left: 20px;
 `;
 const Inner = styled.div`
 display: flex;
@@ -61,8 +63,8 @@ justify-content: space-between;
 align-items: center;
 `;
 const Img = styled.img`
-width: 80px;
-height: 80px;
+width: 55px;
+height: 55px;
 border-radius: 50%;
 object-fit: cover;
 `;

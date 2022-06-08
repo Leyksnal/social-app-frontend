@@ -144,6 +144,13 @@ background-color: #fff;
 
 @media screen and (max-width: 768px) {
     height: 45px;
-    width: 100%;
+    width: 425px;
+    width: 768px;
 }
+  @media screen and (max-width: 425px) {
+    width: 425px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 375px;
+  }
 `;

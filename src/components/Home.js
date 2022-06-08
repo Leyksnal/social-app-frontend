@@ -20,7 +20,7 @@ export default function Home() {
 
 
 const WrapperRight = styled.div`
-width: 450px;
+width: 400px;
 @media screen and (max-width: 768px){
   display: none;
 }
@@ -37,7 +37,7 @@ width: 450px;
 }
 `;
 const Container = styled.div`
-margin-top: 40px;
+margin-top: 10px;
 display: flex;
 
 @media screen and (max-width: 768px) {
