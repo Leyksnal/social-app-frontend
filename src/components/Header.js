@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import {HiHome} from 'react-icons/hi'
 import {TbMessage2} from 'react-icons/tb'
 import {BiMessageSquareAdd, BiSearchAlt} from 'react-icons/bi'
-import {GiTargetShot} from 'react-icons/gi'
 import {AiOutlineHeart} from 'react-icons/ai'
 import {FiCamera} from 'react-icons/fi'
+import {MdExplore} from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -23,7 +24,7 @@ export default function Header() {
                 <Icon3 />
                 <Icon4 />
                 <Icon5 />
-                <Owner>
+                <Owner to="/user">
                     <Img src="/ak.jpg"/>
                 </Owner>
             </IconHolder>
@@ -41,11 +42,13 @@ display: none;
     font-size: 1.5rem;
 }
 `;
-const Owner = styled.div`
+const Owner = styled(Link)`
+text-decoration: none;
 display: flex;
 justify-content: center;
 align-items: center;
 margin-left: 15px;
+cursor: pointer;
 `;
 const Img = styled.img`
 width: 25px;
@@ -57,7 +60,7 @@ const Icon5 = styled(AiOutlineHeart)`
 font-size: 1.5rem;
 margin: 0 10px;
 `;
-const Icon4 = styled(GiTargetShot)`
+const Icon4 = styled(MdExplore)`
 font-size: 1.5rem;
 margin: 0 10px;
 `;

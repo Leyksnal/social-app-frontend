@@ -29,7 +29,7 @@ export default function Suggestion() {
               {
                 display ? (
                   <Div>
-                    <HoverProfile/>
+                    <HoverProfile setDisplay={setDisplay}/>
                   </Div>
                 ) : null
               }
@@ -42,7 +42,7 @@ export default function Suggestion() {
 
 const Div = styled.div`
 position: absolute;
-top: 20px;
+top: 15px;
 `;
 const I = styled.div`
 font-weight: 600;
